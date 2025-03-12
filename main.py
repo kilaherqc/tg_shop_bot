@@ -80,4 +80,4 @@ def send_admin(message):
     bot.send_message(admin_id, f"Вопрос от @{message.from_user.username} \n"
                                 f"{message.text}")
 
-bot.polling()
+bot.polling(non_stop=True)
